@@ -1,183 +1,79 @@
-# 📞 Optimización de horarios de llamadas en gestión de mora
+# 📞 Optimización de Horarios de Llamadas en Cobranzas
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12KOPp6kIrTvwpUpG7kl0fCmyaegorjdn)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/federicoramos67/optimizacion_horarios_cobranzas/blob/main/demo_optimizacion_llamadas_visual.ipynb)
 
-## 🎯 Resumen ejecutivo
-
-Sistema de recomendación de horarios óptimos para contactar clientes en gestión de mora temprana y tardía mediante análisis de datos históricos.
-
-**Reducción proyectada:** llamadas improductivas mediante priorización inteligente de contactos.
+Sistema de recomendación de horarios óptimos para contactar clientes en gestión de mora, aumentando la tasa de contacto efectivo.
 
 ---
 
-## 📊 El problema
+## 🚀 Quickstart (1 Clic)
 
-En centros de contacto especializados en cobranzas:
-- **~55% de llamadas no son atendidas**
-- Los clientes evitan el contacto o no están disponibles
-- Tiempo operador desperdiciado en horarios de baja efectividad
-- Ausencia de criterio basado en datos para priorizar contactos
+Probá la demo en 3 simples pasos:
 
-**Costo empresarial:** baja tasa de contacto efectivo, menor recuperación de mora.
+1.  **Abrir en Colab:** Hacé clic en el botón [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/federicoramos67/optimizacion_horarios_cobranzas/blob/main/demo_optimizacion_llamadas_visual.ipynb).
+2.  **Ejecutar todo:** En el menú de Colab, seleccioná `Runtime` → `Run all`.
+3.  **Interpretar resultados:** Analizá el plan de acción generado en las últimas celdas.
 
 ---
 
-## ✨ La solución
+## 📊 El Problema y la Solución
 
-Análisis predictivo de patrones de atención telefónica:
+En la gestión de cobranzas, un alto porcentaje de las llamadas son improductivas porque se realizan en horarios en que los clientes no están disponibles.
 
-✅ **Identificación** de mejores franjas horarias por cliente  
-✅ **Priorización** de contactos por probabilidad de atención  
-✅ **Recomendaciones accionables** para equipos operativos  
-✅ **Métricas de impacto** cuantificables
+Este proyecto resuelve ese problema analizando datos históricos para **identificar patrones de contacto** y recomendar las **franjas horarias más efectivas** para llamar a cada cliente, reduciendo así el tiempo desperdiciado y aumentando la recuperación.
 
 ---
 
-## 🚀 Demo interactiva
+## 📥 Inputs y Outputs 📤
 
-**[▶️ Ejecutar notebook en Google Colab](https://colab.research.google.com/drive/12KOPp6kIrTvwpUpG7kl0fCmyaegorjdn)**
-
-*No requiere instalación. Usa datos sintéticos. Totalmente privado.*
-
----
-
-## 📈 Resultados generados
-
-El análisis produce:
-
-### 1. Tabla de mejores horarios por cliente
-Identifica la franja óptima basada en histórico de atención
-
-### 2. Ranking de contactos prioritarios
-Top clientes con mayor probabilidad de respuesta
-
-### 3. Plan de acción operativo
-Distribución de llamadas por franjas horarias del día
-
-### Ejemplo de salida:
-
-```
-🎯 PLAN DE LLAMADAS OPTIMIZADO
-=========================================
-
-✅ Cliente 1004
-   → Llamar en: NOCHE (18:00 - 21:00 hs)
-   → Probabilidad de atención: 71%
-   → Basado en 7 intentos previos
-
-✅ Cliente 1010
-   → Llamar en: MAÑANA (08:00 - 12:00 hs)
-   → Probabilidad de atención: 60%
-   → Basado en 5 intentos previos
-
-✅ Cliente 1006
-   → Llamar en: NOCHE (18:00 - 21:00 hs)
-   → Probabilidad de atención: 50%
-   → Basado en 6 intentos previos
-```
+| Input | Output |
+| :--- | :--- |
+| Datos sintéticos de llamadas (ID cliente, hora, resultado) | **1. Mejores horarios por cliente:** La franja horaria con mayor probabilidad de contacto. |
+| | **2. Ranking de prioridad:** Un listado de clientes ordenado por probabilidad de éxito. |
+| | **3. Plan de acción:** Recomendaciones claras y accionables para el equipo operativo. |
 
 ---
 
-## 🛠️ Stack técnico
+## ✨ Demo Interactiva
 
-- **Python 3.8+**
-- **Pandas** - manipulación y agregación de datos
-- **NumPy** - generación de datos sintéticos
+Ejecutá el análisis completo con datos de prueba directamente en tu navegador. No requiere instalación.
 
----
-
-## 📋 Metodología
-
-### Fase 1: Simulación de datos
-Generación de 250 registros históricos:
-- 10 clientes
-- 25 intentos de contacto por cliente
-- Distribución realista de resultados (35% atención, 55% no atención, 10% rechazo)
-
-### Fase 2: Feature engineering
-- Segmentación de horarios en franjas: Mañana (08-12h), Tarde (12-18h), Noche (18-21h)
-- Variable binaria de atención efectiva
-
-### Fase 3: Análisis agregado
-- Cálculo de tasas de atención por cliente y franja
-- Identificación de mejor horario individual
-
-### Fase 4: Generación de recomendaciones
-- Ranking de contactos prioritarios
-- Plan de acción con asignación horaria
+*   **Opción principal (recomendada):**
+    *   **[▶️ Abrir Notebook desde GitHub en Colab](https://colab.research.google.com/github/federicoramos67/optimizacion_horarios_cobranzas/blob/main/demo_optimizacion_llamadas_visual.ipynb)**
+*   **Opción alternativa (fallback):**
+    *   **[▶️ Abrir Notebook desde Google Drive en Colab](https://colab.research.google.com/drive/12KOPp6kIrTvwpUpG7kl0fCmyaegorjdn)**
 
 ---
 
-## 💡 Insights demostrados
+## 🛠️ Stack Técnico
 
-Este proyecto muestra:
+-   **Python 3.8+**
+-   **Pandas**
+-   **NumPy**
 
-- **Pensamiento analítico:** transformación datos → decisiones
-- **Orientación al negocio:** problema real → solución medible
-- **Reproducibilidad técnica:** código limpio, documentado, ejecutable
-- **Comunicación clara:** explicable para stakeholders técnicos y no técnicos
-
----
-
-## 🔄 Escalabilidad productiva
-
-Este proof of concept puede extenderse a:
-
-- ✅ Integración con bases de datos reales (MySQL/PostgreSQL)
-- ✅ Procesamiento de millones de registros
-- ✅ Ejecución automática nocturna (cron jobs)
-- ✅ Exportación a CRM o sistemas de discado automático
-- ✅ Dashboard interactivo con Streamlit/Plotly
-- ✅ Segmentación por tipo de mora (temprana/tardía)
-- ✅ Análisis por día de la semana
+*Nota: No se requiere instalación local para ejecutar la demo en Colab.*
 
 ---
 
-## 📁 Estructura del notebook
+## 🤝 Contribuciones y Comunidad
 
-| Sección | Descripción |
-|---------|-------------|
-| **Celda 1** | Contexto del problema en gestión de mora |
-| **Celdas 2-3** | Stack técnico e importaciones |
-| **Celdas 4-5** | Generación de dataset sintético (250 registros) |
-| **Celdas 6-7** | Feature engineering y transformación |
-| **Celdas 8-9** | Análisis agregado y cálculo de tasas |
-| **Celdas 10-11** | Identificación de mejores horarios |
-| **Celdas 12-13** | Métricas de impacto empresarial |
-| **Celdas 14-15** | Plan de acción operativo priorizado |
-| **Celda 16** | Conclusiones y próximos pasos |
+¡Tu feedback y contribuciones son bienvenidas!
 
----
-
-## 🔐 Privacidad y ética
-
-- Datos 100% sintéticos generados con `numpy.random`
-- No expone información real de clientes
-- Ejecución local sin envío de datos externos
-- Replicable con `seed(42)` para reproducibilidad
+-   **Guía de Contribuciones:** Para proponer mejoras o reportar errores, consultá nuestra [**Guía de Contribuciones**](./.github/CONTRIBUTING.md).
+-   **Código de Conducta:** Mantenemos un ambiente respetuoso. Leé nuestro [**Código de Conducta**](./.github/CODE_OF_CONDUCT.md).
+-   **Seguridad:** Para reportar vulnerabilidades, seguí nuestra [**Política de Seguridad**](./.github/SECURITY.md).
 
 ---
 
 ## 📝 Licencia
 
-MIT License - Libre uso con atribución
+Este proyecto está bajo la [**Licencia MIT**](./LICENSE).
 
 ---
 
 ## 👤 Autor
 
-**Federico ramos**
+**Federico Ramos**
 
-- 🔗 LinkedIn: https://www.linkedin.com/in/federicoramosf/
-- 💻 GitHub: https://github.com/federicoramos67
-- 📧 Email: federicoramos6767@gmail.com
-
----
-
-## 🤝 Contribuciones
-
-¿Mejoras o ideas? Abrí un issue o pull request.
-
----
-
-**⭐ Si este proyecto te resultó útil, dejá una estrella en GitHub**
+-   **LinkedIn:** [federicoramosf](https://www.linkedin.com/in/federicoramosf/)
+-   **GitHub:** [federicoramos67](https://github.com/federicoramos67)
