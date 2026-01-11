@@ -1,6 +1,6 @@
 # 📞 Optimización de horarios de llamadas en gestión de mora
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[TU-USUARIO]/optimizacion-horarios-cobranzas/blob/main/demo_optimizacion_llamadas_visual.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12KOPp6kIrTvwpUpG7kl0fCmyaegorjdn)
 
 ## 🎯 Resumen ejecutivo
 
