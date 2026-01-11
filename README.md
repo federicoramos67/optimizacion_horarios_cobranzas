@@ -35,7 +35,7 @@ Análisis predictivo de patrones de atención telefónica:
 
 ## 🚀 Demo interactiva
 
-**[▶️ Ejecutar notebook en Google Colab](https://colab.research.google.com/github/[TU-USUARIO]/optimizacion-horarios-cobranzas/blob/main/demo_optimizacion_llamadas_visual.ipynb)**
+**[▶️ Ejecutar notebook en Google Colab](https://colab.research.google.com/drive/12KOPp6kIrTvwpUpG7kl0fCmyaegorjdn)**
 
 *No requiere instalación. Usa datos sintéticos. Totalmente privado.*
 
