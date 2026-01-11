@@ -170,7 +170,7 @@ MIT License - Libre uso con atribución
 
 - 🔗 LinkedIn: https://www.linkedin.com/in/federicoramosf/
 - 💻 GitHub: https://github.com/federicoramos67
-- 📧 Email: Federico Ramos.
+- 📧 Email: federicoramos6767@gmail.com
 
 ---
 
